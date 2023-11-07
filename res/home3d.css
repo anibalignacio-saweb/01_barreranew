@@ -1,0 +1,757 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&family=Roboto:wght@400;700;900&display=swap');
+
+/* GLOBAL */
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(122, 122, 122);
+}
+
+
+h2{
+  font-size: 10rem;
+  color: black;
+  font-weight: 900;
+  line-height: 8rem;
+  margin-bottom: 1rem;
+}
+
+h3{
+  color: rgb(34, 34, 34);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+/* COLORS */
+/*
+.viola2572{
+  color: #C98BDB;
+  background-color: #C98BDB;
+  width: 100px;
+  height: 100px;
+}
+
+.giallo130not{
+  color: #ffd500;
+  background-color: #ffd500;
+  width: 100px;
+  height: 100px;
+}
+*/
+.giallo130{
+  color: #ffb300;
+}
+
+.giallo130-bg{
+  background-color: #ffb300;
+}
+
+
+
+/* NAVEGATION */
+
+div.fixer{
+  height: 3rem;
+}
+
+nav{
+  font-family: 'Barlow', sans-serif;
+  background-color: black;
+  color: white;
+  /*width: 70%;*/
+  /*padding: 1rem;*/
+  display: block;
+  position: sticky;
+  top: 0px;
+  float: right;
+  font-weight: 200;
+  padding: 0.4rem 1rem 0.3rem;
+  z-index: 2;
+}
+
+nav ul {
+  padding: 0;
+  vertical-align: top;
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  vertical-align: top;
+  margin-right: 1rem;
+}
+
+
+nav li a{
+  color: white;
+  text-decoration: none;
+}
+
+nav figure{
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+nav img{
+  height: 2rem;
+}
+
+/* MAIN */
+
+section{
+  display: block;
+  width: 100%;
+  min-height: 20rem;
+  padding: 4rem;
+  background: #eee;
+  
+}
+
+section#chi-siamo, section#progetti, footer{
+  z-index: 1;
+}
+
+section#chi-siamo{
+  margin-bottom: 30rem;
+}
+
+article{
+  padding-right: 4.5rem;
+}
+
+#progetti article{
+  padding-right: 0;
+  padding-left: 4.5rem;
+  vertical-align: top;
+}
+
+article, section img{
+  width: 49%;
+  display: inline-block;
+}
+
+.gallery{ /* TODA LA SECCIÓN GALLERY DEBE SER AJUSTADA AL TRASPASARSE AL WORDPRESS DEPENDIENDO DE LA LLAMADA A LA DB */
+  width: 49%; 
+  background-color: black;
+  display: inline-block;
+  padding: 1rem;
+  overflow: hidden;
+  height: 25.5rem;
+}
+
+.gallery-fixer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 1rem;
+  width: 200%;
+  height: 48%;
+}
+
+.gallery-fixer.first{
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.gallery-fixer.second{
+  position: relative;
+  left: -100%;
+}
+
+.gallery a{
+  display: block;
+  width: 15%;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+#hero-temp{
+  height: 50rem;
+}
+
+#progetti .up{
+  padding-bottom: 2rem;
+}
+
+#progetti .down{
+  vertical-align: top;
+}
+
+a.product:hover{
+  transform: rotate(-5deg);
+  transform-origin: center;
+  background-color: #ffb300;
+  transition: all ease 0.3s;
+}
+
+a.product:hover img{
+  transform: scale(1.1) rotate(15deg);
+  transform-origin: center;
+  transition: all ease 0.3s;
+  z-index: 10;
+}
+
+/* FOOTER */
+
+footer{
+  background: black;
+  vertical-align: top;
+  padding: 4% 2% 2%;
+}
+
+footer .footer-fixer{
+  display: block;
+  min-height: 10rem;
+  min-width: 100%;
+}
+
+footer h3{
+  color: white;
+  margin-bottom: 1rem;
+}
+
+footer h4{
+  color: white;
+  font-size: 1.2rem;
+  margin: 1rem 0 0.2rem;
+}
+
+footer .right p{
+  font-size: 1rem;
+}
+
+footer.top, footer.down{
+  display: block;
+}
+
+footer .down{
+  text-align: right;
+  padding-top: 2rem;
+ 
+}
+
+footer .down p{
+  font-size: 1rem;
+}
+
+footer article{
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .email a{
+  /*color: white;*/
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+footer .center{
+  padding-top: 8rem;
+}
+
+footer img{
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .left{
+  text-align: left;
+}
+
+footer .center{
+  text-align: center;
+}
+
+
+footer .right{
+  text-align: right;
+}
+/* FORMS */
+
+form{
+  width: 100%;
+}
+
+form label{
+  width: 25%;
+  display: inline-block;
+  color: white;
+  vertical-align: top;
+  /*margin-right: 1rem;*/
+  font-size: 0.7rem;
+}
+
+form input, form textarea{
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white!important;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+input#submit{
+  background-color: black;
+  color: white;
+  display: block;
+  margin: 0.5rem auto;
+  margin-left: 25%;
+  border-radius: 1rem;
+  height: 2rem;
+  border: 1px solid white;
+  transition: background-color ease 0.5s;
+}
+
+input#submit:hover{
+  background-color: #ffb300;
+  color: black;
+  cursor: pointer;
+  border-color: #ffb300!important;
+}
+
+input:focus, input:focus-visible, input:focus-within, textarea:focus, textarea:focus-visible, textarea:focus-within{
+  border: none;
+  outline: none;
+}
+
+
+/* EFFECTS */
+/* nav */
+
+nav{
+  height: 3rem;
+}
+
+nav li a{
+  display: block;
+  max-height: 0px;
+  transition: max-height ease 0.5s;
+}
+
+nav button{
+  display: none;
+}
+
+nav li:hover{
+  background-color: #ffb300;
+  color: black;
+}
+
+nav li:hover a{
+  color: black!important;
+}
+
+nav li.uno:hover{
+  transform: rotate(15deg);
+}
+
+nav li.due:hover{
+  transform: rotate(-10deg);
+}
+
+nav li.uno:hover a{
+  transform: rotate(-15deg);
+  max-height: 100px;
+}
+
+nav li.due:hover a{
+  transform: rotate(10deg);
+  max-height: 100px;
+}
+
+/* footer email */
+
+footer article{
+  padding: 0;
+}
+
+footer .email{
+  display: inline-block;
+  margin: 0 auto;
+  /*min-height: 100px;*/
+}
+
+footer .email:hover{
+  background-color: #ffb300;
+  color: white;
+  display: inline-block;
+  transform: rotate(8deg);
+}
+
+footer .email a{
+  max-height: 0px;
+  transition: all ease 0.5s;
+  /*width: 0rem;
+  display: block;*/
+}
+
+footer .email:hover a{
+  transform: rotate(-8deg);
+  display: block;
+  max-height: 100px;
+  color: white!important;
+  /*width: 25rem;*/
+}
+
+/* V3D */
+
+#v3d-container { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -10;
+  margin-top: -3rem;
+}
+
+/* MEDIA */
+
+@media only screen and (min-width:1440px) {
+
+  body, html{
+    font-size: 26px!important;
+  }
+
+  #v3d-container {
+    margin-top: -6rem;
+}
+  
+}
+
+@media only screen and (min-width:2500px) {
+
+  body, html{
+    font-size: 28px!important;
+  }
+  
+}
+
+@media only screen and (min-width:3100px) {
+
+  body, html{
+    font-size: 32px!important;
+  }
+  
+}
+
+
+@media only screen and (max-width:1024px) {
+
+  body, html{
+    font-size: 15px!important;
+  }
+
+  h2{
+    font-size: 7rem;
+    line-height: 5.5rem;
+  }
+
+  section img{
+    width:49%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  footer .email a{
+    font-size: 1.8rem;
+  }
+  div.fixer {
+    height: 5rem;
+  }
+  #v3d-container {
+    margin-top: -5rem;
+  }
+
+}
+
+
+@media only screen and (max-width:768px) {
+    html{
+      font-size: 15px!important;
+    }
+
+    nav, nav.close{
+      background-color: transparent;
+      width: 0%;
+      transition: width ease 0.5s, background-color ease 0s;
+      position: fixed;
+      right: 0;
+      padding: 2rem;
+    }
+
+    nav.open{
+      float: none;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      transition: width ease 0.5s;
+    }
+
+    nav button{
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: transparent;
+      border: none;
+    }
+
+    nav button.open{
+      display: block;
+      background-image: url('./menu_icon.svg');
+      right: 2rem;
+      position: relative;
+    }
+
+    nav button.close{
+      background-image: url('./menu_close.svg');
+    }
+
+    nav ul{
+      margin-top: 2rem;
+      /*background: black;*/
+    }
+
+    nav ul, nav.close ul{
+      /*display: none;*/
+      width: 0;
+      min-width: 0%;
+      transition: max-width ease 0.5s;
+
+    }
+
+    nav figure {
+      display: inline-block;
+      /* padding-left: 2rem; */
+      position: relative;
+      top: -14.2rem;
+      float: right;
+    }
+
+    nav li, nav.close li{
+      margin-right: 0;
+      width: 0;
+      float: right;
+      transition: width ease 0.5s;
+    }
+
+    nav.open li{
+      width: 100%;
+    }
+
+    nav li a, nav.close a{
+      color: transparent;
+      transition: color ease 1ms;
+    }
+
+    nav.open li a{
+      color: white;
+      /*transition: color ease 1ms*/
+    }
+
+    nav li:hover{
+      background: none;
+      color: white!important;
+      transform: rotate(0deg)!important;
+    }
+
+    nav li:hover a{
+      background: none;
+      color: white!important;
+      transform: rotate(0deg)!important;
+    }
+
+    nav.open button.open{
+      display: none;
+    }
+
+    nav.open button.close{
+      display: block;
+    }
+
+    ul.open{
+      display: block;
+      height: 100%;
+      z-index: 10;
+      
+      /*position: fixed;*/
+      width: 100%;
+      min-width: 100%;
+      transition: all ease 0.5s;
+    }
+
+    ul.open li{
+      display: block;
+      height: 2rem;
+      text-align: right;
+    }
+
+    div.fixer{
+      height: 3rem;
+    }
+    #v3d-container{
+      margin-top: -5rem;
+    }
+
+    #v3d-container{
+      transform: scale(1.2);
+    }
+
+    #progetti{
+      padding: 4rem 0;
+    }
+  
+    #progetti h2, #progetti article{
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  
+    #progetti article{
+      padding-top: 3rem;
+      width: 100%;
+      display: block;
+    }
+    h2{
+    font-size: 6rem;
+    line-height: 5rem;
+    }
+
+    .gallery{
+      width: 100%;
+    }
+
+    .gallery-fixer {
+      justify-content: center;
+      column-gap: 1rem;
+    }
+
+    .gallery a {
+      display: block;
+      width: 11%;
+    }
+
+    footer article{
+      width: 32%;
+    }
+
+    footer .email a {
+      font-size: 1.6rem;
+    }
+
+}
+
+
+@media only screen and (max-width:425px) {
+  body, html{
+    font-size: 15px!important;
+  }
+
+  #v3d-container{
+    transform: scale(1.5);
+  }
+  #v3d-container canvas{
+    width: 100%!important;
+    height: 100%!important;
+  }
+  h2{
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  #progetti h2{
+    margin-left: -5%;
+  }
+
+  article{
+    width: 100%;
+    padding-right: 0;
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  section img{
+    display: block;
+    width: 100%;
+  }
+
+  #progetti{
+    padding: 4rem 0;
+  }
+
+  #progetti h2, #progetti article{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  #progetti article{
+    padding-top: 3rem;
+  }
+
+  footer article {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer .email a {
+    font-size: 2rem;
+  }
+
+  .gallery{
+    width: 100%;
+  }
+
+  .gallery-fixer{
+    width: 270%;
+  }
+
+  .gallery-fixer.second {
+    left: -150%;
+  }
+
+  .gallery a{
+    width: 15%;
+  }
+
+}
+
+@media only screen and (max-width:375px) {
+  body, html{
+    font-size: 14px!important;
+  }
+  #hero-temp {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  body, html{
+    font-size: 13px!important;
+  }
+  h2 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+  }
+  .gallery {
+    width: 100%;
+  }
+
+}
+
+
+

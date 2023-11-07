@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Barrera Srl - Home 3d</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="">
+  <!-- Twitter -->
+  <!--meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image:src" content=""-->
+  <!-- Open Graph -->
+
+
+  <meta name="generator" content="Verge3D 4.0.1">
+
+  <!-- favicons -->
+
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="./res/effects.js" defer></script>
+  <script src="./app/v3d.js" defer></script>
+  <script src="./app/aaaa.js" defer></script>
+ 
+
+  <link rel="stylesheet" type="text/css" href="./res/home3d.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<div class="fixer"></div>
+		<nav>
+			<button class="open"></button>
+			<button class="close"></button>
+			<ul id="main-menu">
+				<li class="uno"><a href="#">Home</a></li>
+				<li class="due"><a href="#">Chi siamo</a></li>
+				<li class="uno"><a href="#">Macchine</a></li>
+				<li class="due"><a href="#">Progetti</a></li>
+				<li class="uno"><a href="#">Contatti</a></li>
+				<figure><img src="./res/barrera-logo-bianco.png"></figure>
+			</ul>
+		</nav>
+		<section id="v3d-container"></section>
+		<div id="hero-temp"></div>
+		<section id="chi-siamo">
+			<article>
+				<h2>Il Nostro Lavoro</h2>
+				<p>Una profonda conoscenza del settore combinata con 60 anni di esperienza nella progettazione di macchine per i trattamenti termici della calzatura, creano un sodalizio per far crescere idee, oltrepassare i confini e ridefinire ciò che è possibile nel nostro settore</p>
+			</article>
+			<img src="./res/chi_siamo.jpeg" alt="Chi siamo">
+
+		</section>
+		<section id="progetti">
+			<div class="up">
+				<h2>Progetti</h2>
+			</div>
+			<div class="down">
+				<div class="gallery">
+					<div class="gallery-fixer first">
+						<a class="product" href="#"><img src="./res/01_forni_stiratori.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/02_forni.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/03_apri_chiudi_forme.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/04_1-foto-principale-linear-30.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/05_01_applica_puntali.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/06_vertical-12-foto-principale.jpeg" alt="gallery-1"></a>
+					</div>
+					<div class="gallery-fixer second">
+						<a class="product" href="#"><img src="./res/01_forni_stiratori.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/02_forni.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/03_apri_chiudi_forme.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/04_1-foto-principale-linear-30.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/05_01_applica_puntali.jpeg" alt="gallery-1"></a>
+						<a class="product" href="#"><img src="./res/06_vertical-12-foto-principale.jpeg" alt="gallery-1"></a>
+					</div>
+				</div>				
+				<article>
+					<h3>Stiamo progettando qualcosa di diverso</h3>
+					<p>La nostra azienda è nota per il metodo lungimirante che pone lo studio della tecnologia al centro dell’obiettivo e come impiegarla. Non siamo solo produttori di macchine per i trattamenti termici della calzatura, siamo un’azienda a cavallo tra realtà differenti: la fabbrica che vuole lavorare in modo tradizionale e chi investe in sistemi più innovativi come la tecnologia applicata 4.0. Attraverso il nostro Know How e dalla collaborazione con alcuni dei nomi più noti del settore e non, sono stati realizzati progetti che guardano verso la fabbrica del futuro.</p>
+				</article>			
+			</div>
+		
+		</section>
+		<footer>
+			<div class="up">			
+				<article class="left">
+					<h3>Contatti</h3>
+					<form method="POST">
+						<label for="name">Nome</label>
+						<input type="text" name="name" id="name">
+						<br>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required>
+						<br>
+						<label for="telefono">Telefono</label>
+						<input type="tel" name="telefono" id="telefono" placeholder="+39">
+						<br>
+						<label for="message">Message</label>
+						<textarea name="message" id="textarea" cols="20" rows="6"></textarea>
+						<br>
+						<input type="submit" name="submit" id="submit" value="Send">
+					</form>
+				</article>
+				<article class="center">
+					<div class="footer-fixer">
+						<div class="email"><a class="giallo130" href="mailto:info@barrerasrl.it">INFO@BARRERASRL.IT</a></div>	
+					</div>
+				</article>
+				<article class="right">
+					<img src="./res/barrera-logo-bianco.png" alt="logo">
+					<img src="./res/vigavan_white-svg.png" alt="duomo">
+					<h4>Dove siamo</h4>
+					<p>Corso Novara, n.229 27029 Vigevano (PV) Italia</p>
+				</article>
+			</div>
+			<div class="down">
+					<p>P.Iva 02048180182 • REA: PV-241260 • Tel: +39 0381 310713 • Linkedin</p>
+			</div>
+
+
+		</footer>
+
+	</main>
+
+	
+
+	</div>  
+</body>
+</html>
